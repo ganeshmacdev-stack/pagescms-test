@@ -18,12 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("hero-button").textContent = data.hero.button_text;
             document.getElementById("hero-button").href = data.hero.button_url;
 
-            // keep the rest of your existing code here
+            // About
+            // Services
+            // Contact
+            // Footer
+            // ...your existing code...
 
         })
 
         .catch(function (error) {
-            console.error("Error loading site.json:", error);
+            console.error("Error loading data.json:", error);
         });
 
 });
