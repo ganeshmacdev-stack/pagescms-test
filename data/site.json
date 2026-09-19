@@ -1,5 +1,7 @@
 {
-  "title": "Welcome to My New Website",
-  "description": "This page is now completely managed through Pages CMS.",
-  "button_text": "Contact Us"
+  "hero_title": "Welcome to Our Company",
+  "hero_description": "We provide professional services to help your business grow.",
+  "hero_image": "/media/hero.jpg",
+  "button_text": "Learn More",
+  "button_url": "/about.html"
 }
