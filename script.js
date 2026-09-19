@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    fetch("data/site.json")
+    fetch("data.json")
         .then(function (response) {
 
             if (!response.ok) {
