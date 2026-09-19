@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "title": "Building Better Solutions for Your Business",
+    "description": "We provide reliable, innovative and professional solutions that help businesses grow, improve efficiency and achieve their goals.",
+    "image": "images/pexels-colys-hat-740764-1587548.jpg",
+    "button_text": "Discover More",
+    "button_url": "#about"
+  },
+  "about": {
+    "title": "Your Trusted Partner for Business Growth",
+    "content": "At BrightEdge Solutions, we help businesses turn ideas into practical solutions. Our team combines experience, creativity and technology to deliver services that create real value for our clients.\n\nWe work closely with every customer to understand their unique requirements and develop solutions that are reliable, effective and built for long-term success.\n\nWhether you are starting a new project or looking to improve an existing business process, our team is here to help.",
+    "button_text": "Get in Touch",
+    "button_url": "#contact",
+    "image": "images/pexels-leefinvrede-37087504.jpg"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "From strategy to implementation, we provide professional services designed to help your business perform better.",
+    "service_1": {
+      "title": "Business Consulting",
+      "description": "We provide practical business advice and strategies that help organizations identify opportunities, solve challenges and achieve sustainable growth.",
+      "link": "#contact"
+    },
+    "service_2": {
+      "title": "Digital Solutions",
+      "description": "We create modern digital solutions that improve productivity, strengthen your online presence and provide better experiences for your customers.",
+      "link": "#contact"
+    },
+    "service_3": {
+      "title": "Professional Support",
+      "description": "Our dedicated support team provides ongoing assistance and reliable solutions to help keep your business running smoothly.",
+      "link": "#contact"
+    }
+  },
+  "contact": {
+    "title": "Let's Work Together",
+    "description": "Have a project in mind or need help finding the right solution? Get in touch with our team and let's discuss how we can help.",
+    "phone": "+1 555 123 4567",
+    "email": "hello@abc.com",
+    "address": "999 Business Avenue\nNew York, NY 10001\nUnited States",
+    "map": "#"
+  },
+  "footer": {
+    "company_name": "ABC Solutions",
+    "description": "Professional business solutions designed to help organizations grow, innovate and succeed.",
+    "phone": "+1 555 123 4567",
+    "email": "hello@abc.com",
+    "address": "125 Business Avenue\nNew York, NY 10001\nUnited States",
+    "copyright": "© 2026 ABC Solutions. All Rights Reserved."
+  }
+}
