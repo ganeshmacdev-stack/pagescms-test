@@ -1,19 +1,40 @@
+media:
+  input: media
+  output: /media
+
 content:
   - name: site
-    label: Website Content
+    label: Home Page
     type: file
     path: data/site.json
     format: json
 
     fields:
-      - name: title
-        label: Website Title
+      - name: hero_title
+        label: Hero Title
         type: string
+        required: true
 
-      - name: description
-        label: Description
+      - name: hero_description
+        label: Hero Description
         type: text
+        required: true
+
+      - name: hero_image
+        label: Hero Image
+        type: image
+        options:
+          path: media
+          extensions:
+            - jpg
+            - jpeg
+            - png
+            - webp
 
       - name: button_text
         label: Button Text
+        type: string
+
+      - name: button_url
+        label: Button URL
         type: string
