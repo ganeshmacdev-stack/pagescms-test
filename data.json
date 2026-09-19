@@ -38,8 +38,8 @@
     "phone": "+1 555 123 4567",
     "email": "hello@abc.com",
     "address": "999 Business Avenue\nNew York, NY 10001\nUnited States",
-    "map": ""map": "https://www.google.com/maps/embed?pb=...""
-  },
+    "map": "https://www.google.com/maps/embed?pb=..."
+},
   "footer": {
     "company_name": "ABC Solutions",
     "description": "Professional business solutions designed to help organizations grow, innovate and succeed.",
