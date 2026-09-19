@@ -1,40 +1,206 @@
 media:
-  input: media
-  output: /media
+  input: images
+  output: images
 
 content:
-  - name: site
-    label: Home Page
+  - name: homepage
+    label: Homepage
     type: file
-    path: data/site.json
-    format: json
-
+    path: data.json
     fields:
-      - name: hero_title
-        label: Hero Title
-        type: string
-        required: true
 
-      - name: hero_description
-        label: Hero Description
-        type: text
-        required: true
+      # =========================
+      # HERO
+      # =========================
 
-      - name: hero_image
-        label: Hero Image
-        type: image
-        options:
-          path: media
-          extensions:
-            - jpg
-            - jpeg
-            - png
-            - webp
+      - name: hero
+        label: Hero Section
+        type: object
+        fields:
 
-      - name: button_text
-        label: Button Text
-        type: string
+          - name: title
+            label: Hero Title
+            type: string
 
-      - name: button_url
-        label: Button URL
-        type: string
+          - name: description
+            label: Hero Description
+            type: text
+
+          - name: image
+            label: Hero Image
+            type: image
+
+          - name: button_text
+            label: Button Text
+            type: string
+
+          - name: button_url
+            label: Button URL
+            type: string
+
+
+      # =========================
+      # ABOUT
+      # =========================
+
+      - name: about
+        label: About Us
+        type: object
+        fields:
+
+          - name: title
+            label: Title
+            type: string
+
+          - name: content
+            label: Content
+            type: rich-text
+
+          - name: button_text
+            label: Button Text
+            type: string
+
+          - name: button_url
+            label: Button URL
+            type: string
+
+          - name: image
+            label: About Image
+            type: image
+
+
+      # =========================
+      # SERVICES
+      # =========================
+
+      - name: services
+        label: Services
+        type: object
+        fields:
+
+          - name: title
+            label: Section Title
+            type: string
+
+          - name: description
+            label: Section Description
+            type: text
+
+          - name: service_1
+            label: Service 1
+            type: object
+            fields:
+
+              - name: title
+                label: Title
+                type: string
+
+              - name: description
+                label: Description
+                type: text
+
+              - name: link
+                label: Link
+                type: string
+
+          - name: service_2
+            label: Service 2
+            type: object
+            fields:
+
+              - name: title
+                label: Title
+                type: string
+
+              - name: description
+                label: Description
+                type: text
+
+              - name: link
+                label: Link
+                type: string
+
+          - name: service_3
+            label: Service 3
+            type: object
+            fields:
+
+              - name: title
+                label: Title
+                type: string
+
+              - name: description
+                label: Description
+                type: text
+
+              - name: link
+                label: Link
+                type: string
+
+
+      # =========================
+      # CONTACT
+      # =========================
+
+      - name: contact
+        label: Contact
+        type: object
+        fields:
+
+          - name: title
+            label: Contact Title
+            type: string
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: phone
+            label: Phone
+            type: string
+
+          - name: email
+            label: Email
+            type: string
+
+          - name: address
+            label: Address
+            type: text
+
+          - name: map
+            label: Google Map Embed URL
+            type: string
+
+
+      # =========================
+      # FOOTER
+      # =========================
+
+      - name: footer
+        label: Footer
+        type: object
+        fields:
+
+          - name: company_name
+            label: Company Name
+            type: string
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: phone
+            label: Phone
+            type: string
+
+          - name: email
+            label: Email
+            type: string
+
+          - name: address
+            label: Address
+            type: text
+
+          - name: copyright
+            label: Copyright Text
+            type: string
