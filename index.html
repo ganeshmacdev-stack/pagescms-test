@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Welcome to Our Company</title>
+    <title id="page-title">Our Company</title>
 
     <link rel="stylesheet" href="style.css">
-   <script src="script.js"></script>
 </head>
 
 <body>
@@ -17,9 +17,10 @@
 ========================= -->
 
 <header class="site-header">
+
     <div class="container header-inner">
 
-        <a href="#" class="logo">
+        <a href="#home" class="logo" id="header-company">
             Our Company
         </a>
 
@@ -31,6 +32,7 @@
         </nav>
 
     </div>
+
 </header>
 
 
@@ -44,16 +46,11 @@
 
     <div class="hero-content">
 
-        <h1>Welcome to Our Company</h1>
+        <h1 id="hero-title"></h1>
 
-        <p>
-            We provide professional solutions and reliable services
-            to help your business grow and succeed.
-        </p>
+        <p id="hero-description"></p>
 
-        <a href="#about" class="btn">
-            Learn More
-        </a>
+        <a id="hero-button" class="btn" href=""></a>
 
     </div>
 
@@ -74,27 +71,11 @@
                 About Us
             </span>
 
-            <h2>
-                We help businesses grow with professional solutions
-            </h2>
+            <h2 id="about-title"></h2>
 
-            <p>
-                We are a professional company dedicated to providing
-                high-quality services and solutions to our customers.
-                Our experienced team works closely with every client
-                to understand their requirements and deliver reliable
-                results.
-            </p>
+            <div id="about-content"></div>
 
-            <p>
-                Our goal is to build long-term relationships with our
-                clients by providing excellent service, innovative
-                solutions and dependable support.
-            </p>
-
-            <a href="#contact" class="btn">
-                Contact Us
-            </a>
+            <a id="about-button" class="btn" href=""></a>
 
         </div>
 
@@ -102,8 +83,9 @@
         <div class="about-image">
 
             <img
-                src="images/about.jpg"
-                alt="About Our Company"
+                id="about-image"
+                src=""
+                alt="About Us"
             >
 
         </div>
@@ -127,14 +109,9 @@
                 What We Do
             </span>
 
-            <h2>
-                Our Services
-            </h2>
+            <h2 id="services-title"></h2>
 
-            <p>
-                We offer professional services designed to meet
-                your business needs.
-            </p>
+            <p id="services-description"></p>
 
         </div>
 
@@ -150,16 +127,11 @@
                     01
                 </div>
 
-                <h3>
-                    Service 1
-                </h3>
+                <h3 id="service-1-title"></h3>
 
-                <p>
-                    Professional and reliable solutions designed
-                    to help your business achieve its goals.
-                </p>
+                <p id="service-1-description"></p>
 
-                <a href="#contact">
+                <a id="service-1-link" href="">
                     Learn More →
                 </a>
 
@@ -174,16 +146,11 @@
                     02
                 </div>
 
-                <h3>
-                    Service 2
-                </h3>
+                <h3 id="service-2-title"></h3>
 
-                <p>
-                    High-quality services delivered by our
-                    experienced and dedicated team.
-                </p>
+                <p id="service-2-description"></p>
 
-                <a href="#contact">
+                <a id="service-2-link" href="">
                     Learn More →
                 </a>
 
@@ -198,21 +165,15 @@
                     03
                 </div>
 
-                <h3>
-                    Service 3
-                </h3>
+                <h3 id="service-3-title"></h3>
 
-                <p>
-                    Customized solutions created around your
-                    specific requirements and objectives.
-                </p>
+                <p id="service-3-description"></p>
 
-                <a href="#contact">
+                <a id="service-3-link" href="">
                     Learn More →
                 </a>
 
             </div>
-
 
         </div>
 
@@ -238,14 +199,9 @@
                 Get In Touch
             </span>
 
-            <h2>
-                Contact Us
-            </h2>
+            <h2 id="contact-title"></h2>
 
-            <p>
-                Have a question or want to discuss a project?
-                Get in touch with our team.
-            </p>
+            <p id="contact-description"></p>
 
 
             <div class="contact-details">
@@ -258,9 +214,8 @@
 
                     <div>
                         <strong>Phone</strong>
-                        <a href="tel:+1234567890">
-                            +1 234 567 890
-                        </a>
+
+                        <a id="contact-phone" href=""></a>
                     </div>
 
                 </div>
@@ -274,9 +229,8 @@
 
                     <div>
                         <strong>Email</strong>
-                        <a href="mailto:info@example.com">
-                            info@example.com
-                        </a>
+
+                        <a id="contact-email" href=""></a>
                     </div>
 
                 </div>
@@ -289,12 +243,10 @@
                     </div>
 
                     <div>
+
                         <strong>Address</strong>
 
-                        <p>
-                            123 Main Street,<br>
-                            New York, NY 10001
-                        </p>
+                        <p id="contact-address"></p>
 
                     </div>
 
@@ -310,7 +262,8 @@
         <div class="contact-map">
 
             <iframe
-                src="https://www.google.com/maps?q=New%20York%20NY&output=embed"
+                id="contact-map"
+                src=""
                 loading="lazy"
                 allowfullscreen>
             </iframe>
@@ -335,14 +288,9 @@
 
         <div class="footer-column">
 
-            <h3>
-                Our Company
-            </h3>
+            <h3 id="footer-company"></h3>
 
-            <p>
-                Professional solutions and services
-                you can rely on.
-            </p>
+            <p id="footer-description"></p>
 
         </div>
 
@@ -386,18 +334,11 @@
                 Contact
             </h3>
 
-            <p>
-                +1 234 567 890
-            </p>
+            <p id="footer-phone"></p>
 
-            <p>
-                info@example.com
-            </p>
+            <p id="footer-email"></p>
 
-            <p>
-                123 Main Street,<br>
-                New York, NY 10001
-            </p>
+            <p id="footer-address"></p>
 
         </div>
 
@@ -409,9 +350,7 @@
 
         <div class="container">
 
-            <p>
-                © 2026 Our Company. All Rights Reserved.
-            </p>
+            <p id="footer-copyright"></p>
 
         </div>
 
@@ -420,5 +359,10 @@
 </footer>
 
 
+<!-- JavaScript -->
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
