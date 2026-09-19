@@ -18,7 +18,8 @@
             margin: 100px auto;
             padding: 50px;
             text-align: center;
-            background: white;
+            background: #ffffff;
+            border-radius: 10px;
         }
 
         h1 {
@@ -34,8 +35,9 @@
             display: inline-block;
             padding: 12px 25px;
             background: #222;
-            color: white;
+            color: #fff;
             text-decoration: none;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -44,17 +46,36 @@
 
 <div class="hero">
 
-    <h1>My Pages CMS Website</h1>
+    <h1 id="title">Loading...</h1>
 
-    <p>
-        This is my first test website using Pages CMS.
-    </p>
+    <p id="description">Loading...</p>
 
-    <a href="#" class="button">
-        Learn More
-    </a>
+    <a href="#" id="button" class="button">Loading...</a>
 
 </div>
+
+<script>
+
+fetch('data/site.json')
+    .then(response => response.json())
+    .then(data => {
+
+        document.getElementById('title').textContent = data.title;
+
+        document.getElementById('description').textContent =
+            data.description;
+
+        document.getElementById('button').textContent =
+            data.button_text;
+
+    })
+    .catch(error => {
+
+        console.error('Error loading content:', error);
+
+    });
+
+</script>
 
 </body>
 </html>
