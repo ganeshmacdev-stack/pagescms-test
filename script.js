@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(function (response) {
 
             if (!response.ok) {
-                throw new Error("Could not load data/site.json");
+                throw new Error("Could not load data.json");
             }
 
             return response.json();
