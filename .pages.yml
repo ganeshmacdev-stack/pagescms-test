@@ -1,0 +1,19 @@
+content:
+  - name: site
+    label: Website Content
+    type: file
+    path: data/site.json
+    format: json
+
+    fields:
+      - name: title
+        label: Website Title
+        type: string
+
+      - name: description
+        label: Description
+        type: text
+
+      - name: button_text
+        label: Button Text
+        type: string
