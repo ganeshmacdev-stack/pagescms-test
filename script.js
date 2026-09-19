@@ -1,14 +1,29 @@
-fetch("data/site.json")
-    .then(response => response.json())
-    .then(data => {
+document.addEventListener("DOMContentLoaded", function () {
 
-        document.getElementById("hero-title").textContent =
-            data.hero.title;
+    fetch("data/site.json")
+        .then(function (response) {
 
-        document.getElementById("hero-description").textContent =
-            data.hero.description;
+            if (!response.ok) {
+                throw new Error("Could not load data/site.json");
+            }
 
-        document.getElementById("hero-image").src =
-            data.hero.image;
+            return response.json();
+        })
 
-    });
+        .then(function (data) {
+
+            document.getElementById("hero-title").textContent = data.hero.title;
+            document.getElementById("hero-description").textContent = data.hero.description;
+
+            document.getElementById("hero-button").textContent = data.hero.button_text;
+            document.getElementById("hero-button").href = data.hero.button_url;
+
+            // keep the rest of your existing code here
+
+        })
+
+        .catch(function (error) {
+            console.error("Error loading site.json:", error);
+        });
+
+});
